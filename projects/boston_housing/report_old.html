@@ -13811,7 +13811,7 @@ CRv/D73HaYziTJtjAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: A grid search technique can be used to test an estimator for many different hyperparameters, usually by applying cross-validation. The grid is defined by the user as a dictionary and can be used to define multiple settings for multiple parameters. It will test all combination via crossvalidation and measure the goodness of the model by a user defined score e.g. the R2 score. The best It therefore allows to find the best hyperparameters for an estimator,e.g. The max_depth of a decision tree can be grid searched to find the best max_depth in terms of a certain metric, e.g. the R2 score.</strong></p>
+<p><strong>Answer: A grid search technique can be used to test the model for many different hyperparameters, usually by applying cross-validation. It therefore allows to find the best hyperparameters for a model,e.g. The max_depth of a decision tree can be grid searched to find the best max_depth in terms of a certain metric, e.g. the R2 score.</strong></p>
 
 </div>
 </div>
@@ -13838,7 +13838,7 @@ CRv/D73HaYziTJtjAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: in k-fold vaildation, the training data set is split into k different parts. Subsequently, one of the k parts is left out as testing data and the model is trained on the (k-1) remaining parts. The trained model is tested on the one left out part and the score is recorded. This procedure is repeated k-times and the k resulting scores are averaged to yield one final score. Using the default Kfold method, the data will be split sequentially without shuffling. Thinking of Gridsearch, crossvalidation helps to prevent overfitting the training set. Using Gridsearch on only one subset of the data would lead to finding a model that best describes the training data, bearing the risc that the model will not generalize well on the test data. k-fold tests the model for various small training sets, preventing that the model will describe only one subset of the training data. </strong></p>
+<p><strong>Answer: in k-fold vaildation, the testing data is split into k different parts. Subsequently, the model is trained k-times, leaving out one of the k parts. It is then tested on the left out part and scored. The final score is the mean score of all k-tests.</strong></p>
 
 </div>
 </div>
